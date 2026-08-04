@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sensibilidad Alta FF | Adaptable</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔥 SENSIBILIDAD ALTA FREE FIRE</h1>
+    <p>Calcula tu configuración según tu dispositivo</p>
 
+    <div class="form-box">
+      <label>Marca del dispositivo</label>
+      <select id="marca">
+        <option value="samsung">Samsung</option>
+        <option value="xiaomi">Xiaomi / Redmi / POCO</option>
+        <option value="motorola">Motorola</option>
+        <option value="iphone">iPhone</option>
+        <option value="otros">Otros Android</option>
+      </select>
+
+      <label>Gama del celular</label>
+      <select id="gama">
+        <option value="baja">Gama Baja</option>
+        <option value="media">Gama Media</option>
+        <option value="alta">Gama Alta / Flagship</option>
+      </select>
+
+      <label>Estilo de juego</label>
+      <select id="estilo">
+        <option value="rush">Rusher / Alta Velocidad</option>
+        <option value="equi">Equilibrado</option>
+        <option value="sniper">Francotirador</option>
+      </select>
+
+      <button id="btnGenerar">✨ Generar Sensibilidad</button>
+    </div>
+
+    <div class="resultado" id="resultado">
+      <h3>📋 Tu Configuración:</h3>
+      <p id="general"><strong>General:</strong> —</p>
+      <p id="puntoRojo"><strong>Punto Rojo:</strong> —</p>
+      <p id="x2"><strong>Mira 2x:</strong> —</p>
+      <p id="x4"><strong>Mira 4x:</strong> —</p>
+      <p id="awm"><strong>AWM / Francotirador:</strong> —</p>
+      <p id="libre"><strong>Cámara Libre:</strong> —</p>
+      <button id="copiar">📋 Copiar Todo</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
